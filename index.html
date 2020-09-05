@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Taylor Brokerage</title>
+</head>
+
+<body>
+    <div id="mobile_header">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+                <a class="header-top_left col-7" href="#"></a>
+                <div class="header-top_right d-flex justify-content-between align-items-center">
+                    <div class="header-top_right-item">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="header-top_right-item">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="header-top_right-item">
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="header-top_right-item">
+                        <a href="#">Login</a>
+                    </div>
+                    <div class="openBtn" onclick="toggleNav()"></div>
+                </div>
+            </div>
+            <div id="header-top_navbarMenu">
+                <div class="navbarMenu-item">
+                    <a href="#">Home</a>
+                </div>
+                <div class="navbarMenu-item">
+                    <a href="#">About</a>
+                </div>
+                <div class="navbarMenu-item">
+                    <a href="#">Contact</a>
+                </div>
+                <div class="navbarMenu-item">
+                    <a href="#">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <a class="header-top_left" href="#"></a>
+                    <div class="header-top_right d-flex justify-content-between align-items-center">
+                        <div class="header-top_right-item">
+                            <a href="#">Home</a>
+                        </div>
+                        <div class="header-top_right-item">
+                            <a href="#">About</a>
+                        </div>
+                        <div class="header-top_right-item">
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="header-top_right-item">
+                            <a href="#">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="header-content-text d-flex flex-column justify-content-between align-items-center">
+                    <div class="header-text_top">
+                        Be in <span>business</span> for yourself, not by yourself.
+                    </div>
+                    <div class="header-text_bottom">
+                        Our first class support structure helps independent advisors reach new heights in their practice.
+                    </div>
+                </div>
+                <div class="page-buttons d-flex justify-content-center">
+                    <a class="page-button" href="#">
+                        <img src="assets/images/header-button_difference.png" alt="Watch The Difference">
+                        <div>
+                            Watch The Difference
+                        </div>
+                    </a>
+                    <a class="page-button" href="#">
+                        <div>
+                            Ready to get contracted?
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a id="scroll-down" href="#"></a>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="container">
+            <div class="advantages-top">
+                <div class="advantages-top_text">
+                    <div class="advantages-text_top">
+                        Why Choose Us?
+                    </div>
+                    <div class="advantages-text_bottom">
+                        We have strong, complementary partners to help meet all of your needs.
+                    </div>
+                </div>
+            </div>
+            <div class="advantages-content d-flex flex-md-row flex-column justify-content-around align-items-center">
+                <div class="advantages-content_item d-flex flex-column align-items-center">
+                    <div class="advantages-content_item-logo">
+                        <img src="assets/images/advantages-content_item-logo-left.png" alt="Advantage Item Logo">
+                    </div>
+                    <div class="advantages-content_item-heading">
+                        Financial Independence Group
+                    </div>
+                    <div class="advantages-content_item-text">
+                        Leading product distributor, marketing solutions, and back office support with 40 YEARS of experience!
+                    </div>
+                </div>
+                <div class="advantages-content_item col-5"></div>
+                <div class="advantages-content_item d-flex flex-column align-items-center">
+                    <div class="advantages-content_item-logo">
+                        <img src="assets/images/advantages-content_item-logo-right.png" alt="Advantage Item Logo">
+                    </div>
+                    <div class="advantages-content_item-heading">
+                        The Taylor Method
+                    </div>
+                    <div class="advantages-content_item-text">
+                        A proven, field-tested sales system created by Top of the Table producer, Eszylfie Taylor.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offers">
+        <div class="container">
+            <div class="offers-top">
+                What We Offer
+            </div>
+            <div class="offers-content d-flex flex-column justify-content-between">
+                <div class="offers-item d-flex flex-md-row flex-column">
+                    <div class="offers-item_image">
+                        <img src="assets/images/offers-1.png" alt="Offers Item Image">
+                    </div>
+                    <div class="offers-item_text d-flex flex-column">
+                        <div class="offers-item_heading">
+                            Wide Breadth of Product Knowledge
+                        </div>
+                        <div class="offers-item_content">
+                            We offer a diverse set of products from a variety of carriers and provide the necessary tools to sell them effectively.
+                            <a class="offers-item_text-ref" href="#">View our Carrier partners</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="offers-item d-flex flex-md-row flex-column">
+                    <div class="offers-item_image">
+                        <img src="assets/images/offers-2.png" alt="Offers Item Image">
+                    </div>
+                    <div class="offers-item_text d-flex flex-column">
+                        <div class="offers-item_heading">
+                            Case Design and Support
+                        </div>
+                        <div class="offers-item_content">
+                            Our team of marketers are here to guide and support you through all of your application and customer service needs.
+                        </div>
+                    </div>
+                </div>
+                <div class="offers-item d-flex flex-md-row flex-column">
+                    <div class="offers-item_image">
+                        <img src="assets/images/offers-3.png" alt="Offers Item Image">
+                    </div>
+                    <div class="offers-item_text d-flex flex-column">
+                        <div class="offers-item_heading">
+                            Sales Coach
+                        </div>
+                        <div class="offers-item_content">
+                            Access to an industry leading sales and practice management video library that’s proven.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="getStarted">
+        <div class="container d-flex">
+            <div class="getStarted-content col-7">
+                <div class="getStarted-content_top">
+                    Let’s Get Started
+                </div>
+                <div class="getStarted-content_text">
+                    <div>
+                        We are a full service FMO with the back office support of Financial Independence Group, an industry leader for 40 years.
+                    </div>
+                    <div>
+                        Is it one day… or day one. 
+                    </div>
+                </div>
+                <div class="page-buttons d-flex flex-column">
+                    <a class="page-button" href="#">
+                        <img src="assets/images/getStarted-phone.png" alt="Watch The Difference">
+                        <div>
+                            Schedule a Strategy Call
+                        </div>
+                    </a>
+                    <a class="page-button" href="#">
+                        <div>
+                            Ready to get contracted?
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="spacer col"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container d-flex flex-md-row flex-column-reverse justify-content-between align-items-md-start align-items-center">
+                <div class="footer-top_contacts">
+                    1199 East Walnut Street; Pasadena, CA 91106</br>
+                    info@taylorbrokerage.com  <span>|</span>  800-772-3669
+                </div>
+                <div class="footer-top_social d-flex">
+                    <div class="footer-top_social-item social-twitter">
+                        
+                    </div>
+                    <div class="footer-top_social-item social-google">
+                        
+                    </div>
+                    <div class="footer-top_social-item social-linkedin">
+                        
+                    </div>
+                    <div class="footer-top_social-item social-facebook">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom_text">
+                    © 2018 by Taylor Financial & Insurance Services, Inc.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

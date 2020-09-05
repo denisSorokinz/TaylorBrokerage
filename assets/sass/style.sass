@@ -1,0 +1,549 @@
+$OpenSansFont: 'Open Sans', sans-serif
+$mobile_header_background: #3E4245
+$darkgray: rgba(0, 0, 0, 0.27)
+$gray: #666
+$lightgray: #f3f3f3
+$yellow: #e7c607
+$black: #333
+$white: #fff
+$footer-top: #1d1d1d
+$footer-bottom: #141313
+$lg-max: 991px
+$lg-min: 768px
+$md-max: 767px
+$sm-max: 575px
+
+%button-ref
+    .page-button
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 6px
+        text-decoration: none
+        &:first-of-type
+            box-shadow: 0 5px 10px 0 rgba(231, 198, 7, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.25)
+            background-color: $yellow
+            padding: 14px 18px 14px 14px
+            margin-right: 8px
+            img
+                margin-right: 8px
+            &>div
+                font-family: $OpenSansFont
+                font-size: 16px
+                font-weight: bold
+                font-stretch: normal
+                font-style: normal
+                line-height: normal
+                letter-spacing: -0.4px
+                color: $black
+        &:last-of-type
+            padding: 19px 17px
+            border: solid 2px $white
+            &>div
+                font-family: $OpenSansFont
+                font-size: 16px
+                font-weight: bold
+                font-stretch: normal
+                font-style: normal
+                line-height: normal
+                letter-spacing: -0.4px
+                text-align: center
+                color: $white
+
+body
+    min-width: 320px
+
+#mobile_header
+    padding-top: 9px
+    display: none
+    font-size: 0
+    background-color: $mobile_header_background
+    font-family: $OpenSansFont
+    .header-top_left
+        height: 38px
+        background-size: contain
+        background-repeat: no-repeat
+        background-image: url('../images/logo-mobile.png')
+    .container #header-top_navbarMenu
+        .navbarMenu-item
+            a
+                position: relative
+                color: $white
+                text-decoration: none
+                &:hover
+                    font-weight: 700
+                    color: $yellow
+
+.openBtn
+    width: 16px
+    height: 14px
+    background-image: url('../images/menu-button.png')
+    background-size: contain
+    background-repeat: no-repeat
+
+.page-buttons
+    @extend %button-ref
+
+.container
+    //padding: 0
+
+.row
+    margin: auto
+    max-width: 100%
+
+.header
+    //min-height: 800px
+    height: auto
+    padding: 57px 0 69px
+    background-image: url('../images/header-background.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    position: relative
+    &-top
+        margin-bottom: 146px
+        &_left
+            background-image: url('../images/logo.png')
+            background-size: contain
+            background-repeat: no-repeat
+            width: 368px
+            height: 78px
+        &_right
+            &-item
+                position: relative
+                word-wrap: break-word
+                a
+                    display: inline-block
+                    width: 80px
+                    text-decoration: none
+                    font-family: $OpenSansFont
+                    font-size: 14px
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: normal
+                    letter-spacing: -0.35px
+                    text-align: center
+                    color: $white
+                &:hover
+                    font-weight: 700
+                    &::after
+                        display: block
+                        position: absolute
+                        top: 200%
+                        left: 0
+                        content: ''
+                        background-color: $yellow
+                        width: 100%
+                        height: 2px
+                &:last-of-type
+                    margin-right: 0
+            .openBtn
+                display: none
+        #header-top_navbarMenu
+            height: 0
+            .navbarMenu-item a
+                font-size: 0
+                color: $white
+                text-decoration: none
+    &-content
+        &-text
+            margin-bottom: 40px
+            .header-text
+                min-width: 215px
+                &_top
+                    word-wrap: break-word
+                    margin-bottom: 27px
+                    max-width: 800px
+                    font-family: $OpenSansFont
+                    font-size: 56px
+                    font-weight: 800
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: 1.14
+                    letter-spacing: -1px
+                    text-align: center
+                    color: $white
+                    span
+                        background-color: $darkgray
+                        padding-left: 8px
+                        padding-right: 8px
+                &_bottom
+                    font-family: $OpenSansFont
+                    max-width: 486px
+                    font-size: 20px
+                    font-weight: 300
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: 1.5
+                    letter-spacing: 0.3px
+                    text-align: center
+                    color: $white
+    #scroll-down
+        left: calc(50% - 5.5px)
+        margin: 100px auto 69px
+        display: block
+        width: 22px
+        height: 36px
+        background-image: url('../images/scroll-down.png')
+        background-size: contain
+        background-repeat: no-repeat
+
+.advantages
+    padding: 112px 0 138px 0
+    background-color: $lightgray
+    &-top
+        &_text
+            margin-bottom: 40px
+            .advantages-text
+                &_top
+                    margin-bottom: 16px
+                    font-family: $OpenSansFont
+                    font-size: 32px
+                    font-weight: 800
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: normal
+                    letter-spacing: -0.8px
+                    color: $black
+                &_bottom
+                    font-family: $OpenSansFont
+                    font-size: 16px
+                    font-weight: normal
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: 1.5
+                    letter-spacing: -0.4px
+                    color: $gray
+                &_top,
+                &_bottom
+                    text-align: center
+    &-content
+        max-height: 505px
+        background-color: $white
+        border-radius: 6px
+        &_item
+            max-width: 375px
+            padding: 0 20px
+            &-logo 
+                display: block
+                margin: 0 auto 38px
+            &-heading
+                margin-bottom: 8px
+                font-family: $OpenSansFont
+                font-size: 20px
+                font-weight: bold
+                font-stretch: normal
+                font-style: normal
+                line-height: normal
+                letter-spacing: -0.5px
+                color: $black
+            &-text
+                font-family: $OpenSansFont
+                font-size: 16px
+                font-weight: normal
+                font-stretch: normal
+                font-style: normal
+                line-height: 1.75
+                letter-spacing: -0.3px
+                color: $gray
+            &-heading,
+            &-text
+                text-align: center
+            &:nth-of-type(2)
+                border-radius: 5px
+                background-image: url('../images/advantages-image.jpg')
+                background-size: cover
+                background-repeat: no-repeat
+                height: 538px
+                width: 327px
+                padding: 0
+                box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.24)
+
+.offers
+    padding: 100px 0 92px 0
+    background-image: url('../images/offers-background.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    &-top
+        margin-bottom: 40px
+        font-family: $OpenSansFont
+        font-size: 32px
+        font-weight: 800
+        font-stretch: normal
+        font-style: normal
+        line-height: normal
+        letter-spacing: -0.8px
+        text-align: center
+        color: $white
+    &-content
+        margin: auto
+        max-width: 75%
+        min-height: 680px
+        background-color: $white
+        padding: 74px 93px 88px 92px
+        border-radius: 6px
+        .offers-item
+            &_image
+                margin-right: 31px
+            &_heading
+                margin-bottom: 16px
+                font-family: $OpenSansFont
+                font-size: 20px
+                font-weight: bold
+                font-stretch: normal
+                font-style: normal
+                line-height: normal
+                letter-spacing: -0.5px
+                color: $black
+            &_text
+                padding: 24px 0
+                .offers-item_content
+                    max-width: 518px
+                    font-family: $OpenSansFont
+                    font-size: 16px
+                    font-weight: normal
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: 1.75
+                    letter-spacing: -0.3px
+                    color: $gray
+            &:first-of-type
+                .offers-item_text
+                    padding: 10px 0
+                    a
+                        color: $yellow
+                        display: block
+                        text-decoration: underline
+                        font-weight: 700
+.getStarted
+    background-image: url('../images/getStarted-background.jpg')
+    background-position: right 0
+    background-size: contain
+    background-repeat: no-repeat
+    .container
+        .getStarted-content
+            padding: 185px 15px 185px 0
+            background-color: $white
+            &_top
+                margin-bottom: 16px
+                font-family: $OpenSansFont
+                font-size: 48px
+                font-weight: 800
+                font-stretch: normal
+                font-style: normal
+                line-height: normal
+                letter-spacing: -1.2px
+                color: $black
+            &_text
+                margin-bottom: 40px
+                font-family: $OpenSansFont
+                font-size: 16px
+                font-weight: normal
+                font-stretch: normal
+                font-style: normal
+                line-height: 1.75
+                letter-spacing: -0.3px
+                color: $gray
+                div:first-of-type
+                    margin-bottom: 32px
+            .page-buttons
+                .page-button
+                    width: 50%
+                    &:first-of-type
+                        padding: 14px 18px 14px 14px
+                        margin: 0 0 16px 0
+                        &>div
+                            margin: 0 auto
+                    &:last-of-type
+                        padding: 19px 28px
+                        border: solid 2px $black
+                        &>div
+                            margin: 0 auto
+                            color: $black
+        &-background img
+            max-width: 100%
+            display: block
+            margin: 0 0 0 auto
+
+.footer
+    &-top
+        background-color: $footer-top
+        padding: 84px 0 77px 0
+        &_contacts
+            font-family: $OpenSansFont
+            font-size: 16px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 1.88
+            letter-spacing: -0.4px
+            color: $white
+            span
+                color: $yellow
+        &_social
+            &-item
+                width: 35px
+                height: 35px
+                margin-right: 10px
+                &:last-of-type
+                    margin-right: 0
+                &.social-twitter
+                    background-image: url('..//images/footer-social_sprite.png')
+                    background-position: -65px -65px
+                &.social-google
+                    background-image: url('..//images/footer-social_sprite.png')
+                    background-position: -65px -10px
+                &.social-linkedin
+                    background-image: url('..//images/footer-social_sprite.png')
+                    background-position: -10px -65px
+                &.social-facebook
+                    background-image: url('..//images/footer-social_sprite.png')
+                    background-position: -10px -10px
+    &-bottom
+        padding: 25px 0
+        background-color: $footer-bottom
+        &_text
+            text-align: center
+            opacity: 0.7
+            font-family: $OpenSansFont
+            font-size: 14px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 2.14
+            letter-spacing: -0.35px
+            text-align: center
+            color: $white
+
+@media (min-width: 1460px)
+    .getStarted
+        background-size: 50%
+
+@media (max-width: $lg-max)
+    .header
+        .container
+            #scroll-down
+                margin: 75px auto 34px
+    .offers
+        .container
+            .offers-content
+                padding: 74px 50px
+
+@media (max-width: 792px)
+    .getStarted
+        background-image: none
+        .container
+            padding: 0
+            max-width: 100%
+            flex-direction: column-reverse
+            .getStarted-content
+                max-width: 100%
+                padding: 67px 20px
+            .spacer
+                background-image: url('../images/getStarted-background.jpg')
+                background-position: center
+                background-repeat: no-repeat
+                background-size: cover
+                min-height: 375px
+
+@media (max-width: $md-max)
+    #mobile_header
+        display: block
+        .openBtn
+            display: block
+    .header-top
+        display: none
+        &_right
+            &-item
+                display: none
+    .advantages
+        .container
+            .advantages-content
+                max-height: none
+                &_item
+                    margin: 60px 0
+                    &:nth-of-type(2)
+                        background-image: url('../images/advantages-image-mobile.jpg')
+                        background-size: cover
+                        background-repeat: no-repeat
+                        background-position: center
+                        width: calc(100% + 14px)
+                        height: 439px
+                        max-width: none
+                        flex: none
+                        max-height: none
+                        margin: 0
+                        img
+                            width: 100%
+    .offers
+        .container
+            .offers-content
+                padding: 74px 15px
+                max-width: none
+                .offers-item
+                    margin-bottom: 48px
+                    text-align: center
+                    &_image
+                        margin: 0
+                    &:last-of-type
+                        margin: 0
+    .footer
+        &-top
+            .container
+                .footer-top_social
+                    margin-bottom: 48px
+
+@media (max-width: $sm-max)
+    .header
+        padding-top: 87px
+        padding-bottom: 34px
+        .container
+            .header-content
+                &-text
+                    .header-text
+                        &_top
+                            font-size: 40px
+                            line-height: 1.2
+                            letter-spacing: -0.71px
+                        &_bottom
+                            font-size: 20px
+    .advantages
+        .container
+            .advantages-top
+                &_text
+                    .advantages-text
+                        &_top
+                            font-size: 28px
+                            letter-spacing: -0.7px
+                        &_bottom
+                            line-height: 1.75
+                            letter-spacing: -0.3px
+    .offers
+        .container
+            .offers
+                &-top
+                    font-size: 28px
+                    letter-spacing: -0.7px
+                &-content
+                    .offers-item
+                        &_content
+                            font-size: 16px
+    .getStarted
+        .container
+            .getStarted-content
+                text-align: center
+                .page-buttons
+                    .page-button
+                        width: 100%
+@media (max-width: 500px)
+    .header
+        .container
+            .header-content
+                .page-buttons
+                    flex-direction: column
+                    .page-button:first-of-type
+                            margin: 0 0 16px 0
+    .footer
+        &-top
+            .container
+                .footer-top_contacts
+                    font-size: 14px
